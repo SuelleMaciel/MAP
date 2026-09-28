@@ -7,9 +7,9 @@ public class Main {
         EntregadorApp entregador = new EntregadorApp();
         RestaurantePainel restaurante = new RestaurantePainel();
 
-        pedido.registerObserverder(cliente);
-        pedido.registerObserverder(entregador);
-        pedido.registerObserverder(restaurante);
+        pedido.registerObserver(cliente);
+        pedido.registerObserver(restaurante);
+        pedido.registerObserver(entregador);
 
         pedido.setStatus(StatusPedido.PREPARANDO);
         System.out.println();

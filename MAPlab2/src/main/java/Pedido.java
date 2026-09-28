@@ -8,7 +8,7 @@ public class Pedido implements Subject {
     private StatusPedido statusPedido;
 
     @Override
-    public void registerObserverder(Observer observer) {
+    public void registerObserver(Observer observer) {
         observers.add(observer);
     }
 
